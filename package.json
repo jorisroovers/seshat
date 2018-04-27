@@ -1,0 +1,34 @@
+{
+  "name": "seshat",
+  "version": "1.0.0",
+  "description": "Calculating personal life stats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorisroovers/seshat.git"
+  },
+  "keywords": [
+    "lifelog",
+    "quantified self"
+  ],
+  "author": "Joris Roovers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorisroovers/seshat/issues"
+  },
+  "homepage": "https://github.com/jorisroovers/seshat#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.2",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "influx": "^5.0.7",
+    "moment": "^2.22.1",
+    "moment-duration-format": "^2.2.2"
+  }
+}
