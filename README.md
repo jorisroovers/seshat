@@ -19,7 +19,6 @@ export INFLUX_PASSWORD="$(vault-get 'influxdb_homeassistant_password')"
 export INFLUX_HOST="<INFLUX DB HOST>"
 
 
-
 # Determine how much TV I've watched in last day (last day = default time-frame)
 node dist/duration.js -k --measurement device_tracker.samsungtv --state home --username "$INFLUX_USER" --password "$INFLUX_PASSWORD" --host "$INFLUX_HOST" --database homeassistant
 
@@ -33,3 +32,6 @@ node dist/duration.js -k --measurement device_tracker.samsungtv --state home --u
 # Write results back to DB using --write-duration
 node dist/duration.js -k --measurement device_tracker.samsungtv --state home --username "$INFLUX_USER" --password "$INFLUX_PASSWORD" --host "$INFLUX_HOST" --database homeassistant  --start-time $(date -v "-1w" +%s)  --write-duration
 ```
+
+### Development
+In VSCode, use Cmd+Shift+P, type "Run Task" and then choose "gulp:watch" as the task to run. This will watch duration.ts and compile it to javascript on the fly.
