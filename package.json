@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jorisroovers/seshat#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-typescript": "^4.0.2",
     "typescript": "^2.8.3"
   },
